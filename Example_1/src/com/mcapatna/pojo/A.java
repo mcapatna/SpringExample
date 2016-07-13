@@ -19,5 +19,4 @@ public class A {
 		System.out.println(a);
 		System.out.println(str);
 	}
-
 }
