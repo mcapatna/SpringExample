@@ -2,7 +2,11 @@ package com.mcapatna.manager;
 
 import com.mcapatna.pojo.A;
 import com.mcapatna.pojo.B;
-
+/**
+ * 
+ * @author mcapatna
+ *
+ */
 public class AppMgr {
 	public AppMgr() {
 		super();

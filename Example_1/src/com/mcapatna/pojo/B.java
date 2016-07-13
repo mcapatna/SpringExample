@@ -1,5 +1,10 @@
 package com.mcapatna.pojo;
 
+/**
+ * 
+ * @author mcapatna
+ *
+ */
 public class B {
 	int b;
 	String msg;
