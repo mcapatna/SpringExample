@@ -1,0 +1,4 @@
+Objective
+----------
+
+Example for AutowireByName
