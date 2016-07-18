@@ -17,13 +17,19 @@ public class Customer {
 	private String cname;
 	private List<String> emails;
 	private Set<Long> phones;
-	private Map<String, Long> ref;
+	private Map<String, Long> refs;
 	private Properties myProperties;
 	private Address address;
 	private Set<Order> order;
 
 	public int getCid() {
 		return cid;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [cid=" + cid + ", cname=" + cname + ", emails=" + emails + ", phones=" + phones + ", refs="
+				+ refs + ", myProperties=" + myProperties + ", address=" + address + ", order=" + order + "]";
 	}
 
 	public void setCid(int cid) {
@@ -54,12 +60,12 @@ public class Customer {
 		this.phones = phones;
 	}
 
-	public Map<String, Long> getRef() {
-		return ref;
+	public Map<String, Long> getRefs() {
+		return refs;
 	}
 
-	public void setRef(Map<String, Long> ref) {
-		this.ref = ref;
+	public void setRefs(Map<String, Long> refs) {
+		this.refs = refs;
 	}
 
 	public Properties getMyProperties() {
@@ -86,17 +92,13 @@ public class Customer {
 		this.order = order;
 	}
 
-	public Customer(int cid, String cname, List<String> emails, Set<Long> phones, Map<String, Long> ref,
-			Properties myProperties, Address address, Set<Order> order) {
+	public Customer(int cid, String cname, List<String> emails, Set<Long> phones, Address address) {
 		super();
 		this.cid = cid;
 		this.cname = cname;
 		this.emails = emails;
 		this.phones = phones;
-		this.ref = ref;
-		this.myProperties = myProperties;
 		this.address = address;
-		this.order = order;
 	}
 
 }

@@ -23,7 +23,7 @@
 		<property name="cost" value="99.99" />
 		<property name="status" value="New" />
 	</bean>
-			
+
 	<bean id="cust" class="com.mcapatna.spring.ioc.model.Customer">
 		<constructor-arg value="1001" />
 		<constructor-arg value="mcapatna" />
@@ -43,6 +43,7 @@
 				<value>777777777777</value>
 			</set>
 		</constructor-arg>
+		<constructor-arg ref="add" />
 		<property name="refs">
 			<map>
 				<entry key="AAA" value="1111" />
@@ -58,8 +59,8 @@
 				<prop key="CCC">3333</prop>
 			</props>
 		</property>
-<constructor-arg ref="add" />
-		<property name="orders">
+
+		<property name="order">
 			<set>
 				<ref local="order1" />
 				<ref local="order2" />
