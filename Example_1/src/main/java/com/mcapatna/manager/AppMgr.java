@@ -21,10 +21,7 @@ public class AppMgr {
 		bobj.show();
 	}
 
-	public static void main(String[] args) {
-		System.out.println("AppMgr.main()");
-	}
-
+	
 	public A getAobj() {
 		return aobj;
 	}
