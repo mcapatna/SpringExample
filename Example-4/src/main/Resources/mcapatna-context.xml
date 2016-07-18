@@ -9,5 +9,11 @@
 	</bean>
 	<!-- <bean id="ha2" class=""></bean> -->
 
-
+	<bean id="aob" class="com.mcapatna.spring.ioc.model.A">
+		<property name="msg" value="Msg from A" />
+	</bean>
+	<bean id="hello" class="com.mcapatna.spring.ioc.model.Hello"
+	autowire="byType">
+		
+	</bean>
 </beans>
