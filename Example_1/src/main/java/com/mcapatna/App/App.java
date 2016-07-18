@@ -6,8 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.mcapatna.manager.AppMgr;
 /**
  * 
- * @author mcapatna
- *
+ * @author mcapatna,The Power House
+ * @Since 18 Jul 2016
+ * @Details at www.mcapatna.wordpress.com
  */
 public class App {
 	public static void main(String[] args) {

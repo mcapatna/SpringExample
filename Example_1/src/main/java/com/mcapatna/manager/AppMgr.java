@@ -4,8 +4,9 @@ import com.mcapatna.pojo.A;
 import com.mcapatna.pojo.B;
 /**
  * 
- * @author mcapatna
- *
+ * @author mcapatna,The Power House
+ * @Since 18 Jul 2016
+ * @Details at www.mcapatna.wordpress.com
  */
 public class AppMgr {
 	public AppMgr() {

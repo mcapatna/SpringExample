@@ -2,8 +2,9 @@ package com.mcapatna.pojo;
 
 /**
  * 
- * @author mcapatna
- *
+ * @author mcapatna,The Power House
+ * @Since 18 Jul 2016
+ * @Details at www.mcapatna.wordpress.com
  */
 public class B {
 	int b;
