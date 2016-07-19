@@ -7,13 +7,16 @@
 		<property name="msg" value="Msg from Hai" />
 		<property name="no" value="12" />
 	</bean>
-	<!-- <bean id="ha2" class=""></bean> -->
-
+	<!-- <bean id="ha2" class="com.mcapatna.spring.ioc.model.Hai">
+		<property name="msg" value="Msg-2 from Hai" />
+		<property name="no" value="13" />
+	</bean>
+org.springframework.beans.factory.UnsatisfiedDependencyException -->
 	<bean id="aob" class="com.mcapatna.spring.ioc.model.A">
 		<property name="msg" value="Msg from A" />
 	</bean>
 	<bean id="hello" class="com.mcapatna.spring.ioc.model.Hello"
-	autowire="byType">
-		
+		autowire="byType">
+
 	</bean>
 </beans>
