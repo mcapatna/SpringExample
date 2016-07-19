@@ -30,9 +30,13 @@ public class Hello {
 		this.aobj = aobj;
 	}
 
-	void m1() {
-		hai.show();
-		aobj.show();
+	public void m1() {
+		if (hai != null) {
+			hai.show();
+		}
+		if (aobj != null) {
+			aobj.show();
+		}
 	}
 
 }
