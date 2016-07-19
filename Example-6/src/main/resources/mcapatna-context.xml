@@ -3,10 +3,13 @@
 	xmlns:mcapatna="http://www.w3.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
 	<bean id="ao" class="com.mcapatna.spring.ioc.model.A" mcapatna:a="99"
 		mcapatna:msg1="hai from A" />
 	<bean id="bo1" class="com.mcapatna.spring.ioc.model.B" mcapatna:b="88"
-		mcapatna:a="11" mcapatna:msg1="msg from B" mcapatna:msg2="msg from B" />
+		mcapatna:a="11" mcapatna:msg1="msg-1 from B" mcapatna:msg2="msg-2 from B" />
 	<bean id="bo2" class="com.mcapatna.spring.ioc.model.B" mcapatna:b="22"
 		mcapatna:msg2="Hello man"></bean>
+	<bean id="hello" class="com.mcapatna.spring.ioc.model.Hello"
+		mcapatna:aobj-ref="ao" mcapatna:bobj-ref="bo1"></bean>
 </beans>

@@ -1,7 +1,5 @@
 package com.mcapatna.spring.ioc.model;
 
-import com.mcapatna.pojo.A;
-import com.mcapatna.pojo.B;
 /**
  * 
  * @author mcapatna,The Power House

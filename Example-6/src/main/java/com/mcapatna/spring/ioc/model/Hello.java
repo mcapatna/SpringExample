@@ -18,7 +18,7 @@ public class Hello {
 		this.bobj = bobj;
 	}
 
-	void show() {
+	public void show() {
 		aobj.show();
 		bobj.show();
 	}
