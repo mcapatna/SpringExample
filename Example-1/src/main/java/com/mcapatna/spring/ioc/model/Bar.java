@@ -6,11 +6,11 @@ package com.mcapatna.spring.ioc.model;
  * @Since 18 Jul 2016
  * @Details at www.mcapatna.wordpress.com
  */
-public class B {
+public class Bar {
 	int b;
 	String msg;
 
-	public B(int b, String msg) {
+	public Bar(int b, String msg) {
 		super();
 		this.b = b;
 		this.msg = msg;

@@ -4,11 +4,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="ao" class="com.mcapatna.spring.ioc.model.A">
+	<bean id="ao" class="com.mcapatna.spring.ioc.model.Foo">
 		<property name="a" value="111" />
 		<property name="str" value="a" />
 	</bean>
-	<bean id="bo" class="com.mcapatna.spring.ioc.model.B">
+	<bean id="bo" class="com.mcapatna.spring.ioc.model.Bar">
 		<constructor-arg value="12" />
 		<constructor-arg value="oops" />
 	</bean>
