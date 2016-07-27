@@ -2,6 +2,7 @@ package com.mcapatna.spring.ioc.app;
 
 import com.mcapatna.spring.ioc.model.Foo;
 import com.mcapatna.spring.ioc.model.Bar;
+
 /**
  * 
  * @author mcapatna,The Power House
@@ -13,29 +14,20 @@ public class AppMgr {
 		super();
 	}
 
-	Foo aobj;
-	Bar bobj;
+	Foo foo_Obj;
+	Bar bar_Obj;
 
 	public void show() {
-		aobj.showA();
-		bobj.show();
+		foo_Obj.showA();
+		bar_Obj.show();
 	}
 
-	
-	public Foo getAobj() {
-		return aobj;
+	public void setFoo_Obj(Foo foo_Obj) {
+		this.foo_Obj = foo_Obj;
 	}
 
-	public void setAobj(Foo aobj) {
-		this.aobj = aobj;
-	}
-
-	public Bar getBobj() {
-		return bobj;
-	}
-
-	public void setBobj(Bar bobj) {
-		this.bobj = bobj;
+	public void setBar_Obj(Bar bar_Obj) {
+		this.bar_Obj = bar_Obj;
 	}
 
 }
