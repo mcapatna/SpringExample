@@ -28,8 +28,8 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "Customer [cid=" + cid + ", cname=" + cname + ", emails=" + emails + ", phones=" + phones + ", refs="
-				+ refs + ", myProperties=" + myProperties + ", address=" + address + ", order=" + order + "]";
+		return "Customer [cid=" + cid + ", cname=" + cname + ", emails=" + emails + ", phones=" + phones + "\n, refs="
+				+ refs + ", myProperties=" + myProperties + ", address=" + address + ",\n order=" + order + "]";
 	}
 
 	public void setCid(int cid) {

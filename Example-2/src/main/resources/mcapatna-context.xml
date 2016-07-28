@@ -7,10 +7,8 @@
 	<bean id="add" class="com.mcapatna.spring.ioc.model.Address">
 		<constructor-arg value="146" />
 		<constructor-arg value="Vivanta" />
-		<constructor-arg value="Banagalore" />
+		<constructor-arg value="Bangalore" />
 	</bean>
-	
-	
 	<bean id="order1" class="com.mcapatna.spring.ioc.model.Order">
 		<property name="o_id" value="1014" />
 		<property name="o_Date" value="14-04-14" />
