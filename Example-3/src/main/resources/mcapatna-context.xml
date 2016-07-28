@@ -3,14 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="hai" class="com.mcapatna.spring.ioc.model.Hai">
-		<property name="msg" value="his is msg from Hi" />
-		<property name="no" value="12" />
+	<bean id="barObj" class="com.mcapatna.spring.ioc.model.Bar">
+		<property name="msg" value="Bar always pays their Debt" />
+		<property name="no" value="14" />
 	</bean>
-	<bean id="aobj" class="com.mcapatna.spring.ioc.model.A">
-		<property name="msg" value="This is msg from A" />
+	<bean id="fooObj" class="com.mcapatna.spring.ioc.model.Foo">
+		<property name="msg" value="Foo sends their regards" />
 	</bean>
-	<bean id="hello" class="com.mcapatna.spring.ioc.model.Hello"
+	<bean id="mgr" class="com.mcapatna.spring.ioc.model.AppMgr"
 		autowire="byName">
 	</bean>
 </beans>

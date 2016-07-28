@@ -6,7 +6,7 @@ package com.mcapatna.spring.ioc.model;
  * @Since 18 Jul 2016
  * @Details at www.mcapatna.wordpress.com
  */
-public class Hai {
+public class Bar {
 	private String msg;
 	private int no;
 

@@ -3,7 +3,7 @@ package com.mcapatna.spring.ioc.app;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.mcapatna.spring.ioc.model.Hello;
+import com.mcapatna.spring.ioc.model.AppMgr;
 
 /**
  * 
@@ -12,9 +12,11 @@ import com.mcapatna.spring.ioc.model.Hello;
  * @Details at www.mcapatna.wordpress.com
  */
 public class App {
+	private static ApplicationContext context;
+
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("mcapatna-context.xml");
-		Hello h = (Hello) context.getBean("hello");
+		context = new ClassPathXmlApplicationContext("mcapatna-context.xml");
+		AppMgr h = (AppMgr) context.getBean("mgr");
 		h.m1();
 	}
 
