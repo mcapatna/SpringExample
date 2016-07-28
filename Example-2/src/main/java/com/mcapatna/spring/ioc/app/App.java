@@ -15,14 +15,17 @@ import com.mcapatna.spring.ioc.model.Order;
  * @Details at www.mcapatna.wordpress.com
  */
 public class App {
+	private static ApplicationContext context;
+
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("mcapatna-context.xml");
-		Customer c=(Customer) context.getBean("cust");
+		context = new ClassPathXmlApplicationContext("mcapatna-context.xml");
+		Customer c = (Customer) context.getBean("cust");
 		System.out.println(c);
-		Set<Order> orders=c.getOrder();
-		for(Order o:orders){
+		Set<Order> orders = c.getOrder();
+		for (Order o : orders) {
 			System.out.println(o);
 		}
+
 	}
 
 }

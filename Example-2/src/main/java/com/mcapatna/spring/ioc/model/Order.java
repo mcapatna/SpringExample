@@ -2,26 +2,26 @@ package com.mcapatna.spring.ioc.model;
 
 public class Order {
 
-	private int orderId;
-	private String orderDate;
+	private int o_id;
+	private String o_Date;
 	private int qty;
 	private double cost;
 	private String status;
 
-	public int getOrderId() {
-		return orderId;
+	public int getO_id() {
+		return o_id;
 	}
 
-	public void setOrderId(int orderId) {
-		this.orderId = orderId;
+	public void setO_id(int o_id) {
+		this.o_id = o_id;
 	}
 
-	public String getOrderDate() {
-		return orderDate;
+	public String getO_Date() {
+		return o_Date;
 	}
 
-	public void setOrderDate(String orderDate) {
-		this.orderDate = orderDate;
+	public void setO_Date(String o_Date) {
+		this.o_Date = o_Date;
 	}
 
 	public int getQty() {
@@ -50,8 +50,8 @@ public class Order {
 
 	@Override
 	public String toString() {
-		return "Order [orderId=" + orderId + ", orderDate=" + orderDate + ", qty=" + qty + ", cost=" + cost
-				+ ", status=" + status + "]";
+		return "Order [o_id=" + o_id + ", o_Date=" + o_Date + ", qty=" + qty + ", cost=" + cost + ", status=" + status
+				+ "]";
 	}
 
 }

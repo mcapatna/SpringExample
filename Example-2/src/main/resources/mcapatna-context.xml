@@ -5,27 +5,29 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean id="add" class="com.mcapatna.spring.ioc.model.Address">
-		<constructor-arg value="101" />
-		<constructor-arg value="HSR" />
-		<constructor-arg value="Blore" />
+		<constructor-arg value="146" />
+		<constructor-arg value="Vivanta" />
+		<constructor-arg value="Banagalore" />
 	</bean>
+	
+	
 	<bean id="order1" class="com.mcapatna.spring.ioc.model.Order">
-		<property name="orderId" value="11" />
-		<property name="orderDate" value="10-10-10" />
-		<property name="qty" value="9" />
-		<property name="cost" value="99.99" />
+		<property name="o_id" value="1014" />
+		<property name="o_Date" value="14-04-14" />
+		<property name="qty" value="14" />
+		<property name="cost" value="14.44" />
 		<property name="status" value="New" />
 	</bean>
 	<bean id="order2" class="com.mcapatna.spring.ioc.model.Order">
-		<property name="orderId" value="11" />
-		<property name="orderDate" value="10-10-10" />
-		<property name="qty" value="9" />
-		<property name="cost" value="99.99" />
+		<property name="o_id" value="1401" />
+		<property name="o_Date" value="14-04-14" />
+		<property name="qty" value="41" />
+		<property name="cost" value="41.41" />
 		<property name="status" value="New" />
 	</bean>
 
 	<bean id="cust" class="com.mcapatna.spring.ioc.model.Customer">
-		<constructor-arg value="1001" />
+		<constructor-arg value="114" />
 		<constructor-arg value="mcapatna" />
 		<constructor-arg>
 			<list>
@@ -38,25 +40,24 @@
 		<constructor-arg>
 			<set>
 				<value>123456</value>
-				<value>7654321</value>
-				<value>091234567</value>
-				<value>777777777777</value>
+				<value>78910</value>
+				<value>11111111</value>
+				<value>141414141</value>
 			</set>
 		</constructor-arg>
 		<constructor-arg ref="add" />
 		<property name="refs">
 			<map>
-				<entry key="AAA" value="1111" />
-				<entry key="BBB" value="2222" />
-				<entry key="CCC" value="3333" />
+				<entry key="A" value="1111" />
+				<entry key="B" value="2222" />
+				<entry key="C" value="3333" />
 			</map>
 		</property>
-
 		<property name="myProperties">
 			<props>
-				<prop key="AAA">1111</prop>
-				<prop key="BBB">2222</prop>
-				<prop key="CCC">3333</prop>
+				<prop key="A">1111</prop>
+				<prop key="B">2222</prop>
+				<prop key="C">3333</prop>
 			</props>
 		</property>
 
