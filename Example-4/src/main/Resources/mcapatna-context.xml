@@ -3,19 +3,21 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="ha1" class="com.mcapatna.spring.ioc.model.Hai">
-		<property name="msg" value="Msg from Hai" />
-		<property name="no" value="12" />
+	<bean id="starks" class="com.mcapatna.spring.ioc.model.WinterFell">
+		<property name="motto" value="'winter is coming" />
+		<property name="king" value="'Eddard Stark'" />
 	</bean>
-	<!-- <bean id="ha2" class="com.mcapatna.spring.ioc.model.Hai">
-		<property name="msg" value="Msg-2 from Hai" />
-		<property name="no" value="13" />
+	<!-- <bean id="bolton" class="com.mcapatna.spring.ioc.model.WinterFell">
+		<property name="motto" value="'Our Blades Are Sharp'" />
+		<property name="king" value="'Rogar Boltan'" />
 	</bean>
+	Since 2 obj of winterfells were present so it was throwing
 org.springframework.beans.factory.UnsatisfiedDependencyException -->
-	<bean id="aob" class="com.mcapatna.spring.ioc.model.A">
-		<property name="msg" value="Msg from A" />
+	<bean id="aob" class="com.mcapatna.spring.ioc.model.RiverRun">
+		<property name="motto" value="'Family, Duty, Honor'" />
+		<property name="king" value="'Hoster Tully'" />
 	</bean>
-	<bean id="hello" class="com.mcapatna.spring.ioc.model.Hello"
+	<bean id="got_obj" class="com.mcapatna.spring.ioc.model.GameOfThrones"
 		autowire="byType">
 
 	</bean>
