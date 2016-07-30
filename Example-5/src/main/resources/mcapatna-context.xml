@@ -3,14 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="aobj" class="com.mcapatna.spring.ioc.model.A">
-		<property name="msg" value="Msg from A" />
+	<bean id="indianCricket" class="com.mcapatna.spring.ioc.model.Cricket">
+		<property name="captain" value="'MSD'" />
 	</bean>
-	<bean id="ha1" class="com.mcapatna.spring.ioc.model.Hai">
-		<property name="msg" value="Msg from Hai" />
-		<property name="n" value="99" />
+	<bean id="indianHockey" class="com.mcapatna.spring.ioc.model.Hockey">
+		<property name="captain" value="'Sardara Singh'" />
+		<property name="totalGoal" value="299" />
 	</bean>
-	<bean id="hello" class="com.mcapatna.spring.ioc.model.Hello"
+	<bean id="indianGames" class="com.mcapatna.spring.ioc.model.IndianGames"
 	autowire="constructor">
 	</bean>
 </beans>
