@@ -10,16 +10,8 @@ public class WinterFell {
 	private String motto;
 	private String king;
 
-	public String getMotto() {
-		return motto;
-	}
-
 	public void setMotto(String motto) {
 		this.motto = motto;
-	}
-
-	public String getKing() {
-		return king;
 	}
 
 	public void setKing(String king) {

@@ -18,7 +18,7 @@ public class GameOfThrones {
 		this.tully = tully;
 	}
 
-	public void m1() {
+	public void describe_All_houses() {
 		stark.describe();
 		tully.describe();
 	}

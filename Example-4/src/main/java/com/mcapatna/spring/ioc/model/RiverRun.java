@@ -10,21 +10,14 @@ public class RiverRun {
 	private String motto;
 	private String king;
 
-	public String getMotto() {
-		return motto;
-	}
-
 	public void setMotto(String motto) {
 		this.motto = motto;
-	}
-
-	public String getKing() {
-		return king;
 	}
 
 	public void setKing(String king) {
 		this.king = king;
 	}
+
 	public void describe() {
 		System.out.println("WinterFell is ruled by " + king + " & Its motto is " + motto);
 	}
