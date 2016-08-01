@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:mcapatna="http://www.w3.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mcapatna="http://www.springframework.org/schema/p"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="ao" class="com.mcapatna.spring.ioc.model.A" mcapatna:a="99"
-		mcapatna:msg1="hai from A" />
-	<bean id="bo1" class="com.mcapatna.spring.ioc.model.B" mcapatna:b="88"
-		mcapatna:a="11" mcapatna:msg1="msg-1 from B" mcapatna:msg2="msg-2 from B" />
-	<bean id="bo2" class="com.mcapatna.spring.ioc.model.B" mcapatna:b="22"
-		mcapatna:msg2="Hello man"></bean>
-	<bean id="hello" class="com.mcapatna.spring.ioc.model.Hello"
-		mcapatna:aobj-ref="ao" mcapatna:bobj-ref="bo1"></bean>
+	<bean id="linesterHouse" class="com.mcapatna.spring.ioc.model.LinesterHouse"
+		mcapatna:linester="Tywin Linester"
+		mcapatna:linesterQuote="A lion doesn’t concern himself with the opinions of a sheep" />
+
+	<bean id="boltonHouse" class="com.mcapatna.spring.ioc.model.BoltonHouse"
+		mcapatna:bolton="Roose Boltan" mcapatna:boltonQuote="A naked man has few secrets; a flayed man, none."
+		mcapatna:linester="Cersi Lincester"
+		mcapatna:linesterQuote="When you play game of thrones you win or you die There is no middle ground" />
+
+	<bean id="boltonHouse2" class="com.mcapatna.spring.ioc.model.BoltonHouse" mcapatna:bolton="Ramsay Boltan"
+		mcapatna:boltonQuote="If you think this has a happy ending, you haven't been paying attention!"></bean>
+	<bean id="manager" class="com.mcapatna.spring.ioc.model.Mgr"
+		mcapatna:linesterHouse-ref="linesterHouse" mcapatna:boltonHouse-ref="boltonHouse"></bean>
 </beans>

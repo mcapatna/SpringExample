@@ -11,13 +11,13 @@ public class IndianGames {
 	private Cricket indianCricket;
 
 	public IndianGames(Hockey indianHockey, Cricket indiancricket) {
-		System.out.println("IndianGames.IndianGames()");
+		System.out.println("Intializing using Constructor with cricket & hockey obj");
 		this.indianHockey = indianHockey;
 		this.indianCricket = indiancricket;
 	}
 
 	public IndianGames() {
-		System.out.println("IndianGames.IndianGames()");
+		System.out.println("Intializing using default Constructor");
 	}
 
 	public IndianGames(Hockey indianHockey) {

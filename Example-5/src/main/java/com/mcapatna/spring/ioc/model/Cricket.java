@@ -13,10 +13,7 @@ public class Cricket {
 		System.out.println("The captain of cricket is " + captain);
 	}
 
-	public String getCaptain() {
-		return captain;
-	}
-
+	
 	public void setCaptain(String captain) {
 		this.captain = captain;
 	}
